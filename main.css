@@ -1,0 +1,35 @@
+body {
+    min-height: 100svh;
+    margin: 0 auto;
+    box-sizing: border-box;
+    width: 800px;
+    background-color: rgb(80,80,80);
+}
+
+#videos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    width: 100%;
+    padding: 12px;
+}
+
+video {
+    width: 100%;
+    background-color: rgb(60,60,60);
+}
+
+textarea {
+    height: 50px;
+    width: 100%;
+}
+
+video:hover {
+    outline: 3px solid rgb(0,200,0);
+}
+
+@media screen and (max-width: 800px) {
+    body{
+        width: 100%;
+    }
+}
